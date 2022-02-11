@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	src: url("./Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Bold';
+	src: url("./Montserrat-ExtraBold.woff2") format("woff2");
+}
+*/
+:root {
+  --gap: 2px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --main-width: 800px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --radius: 8px;
+  --primary: #5DC3B2;
+  --secundary: #132C33;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', Trebuchet, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  background: #1d1e20;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section, table {
+  display: block;
+}
+
+strong {
+  font-weight: 900;
+}
+
+main {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1, h2, h3, h4, li {
+  color: #fff;
+}
+
+.ScreenReaders {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/**********************************/
+.navigatie {
+  background-color: var(--secundary);
+}
+
+.navigatie .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.navigatie .menu {
+  margin-left: auto;
+  display: -webkit-inline-flex;
+}
+/*# sourceMappingURL=style.css.map */
