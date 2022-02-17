@@ -59,10 +59,47 @@
 	</head>
 
 	<body itemscope itemtype="https://schema.org/WebPage" class="HomePage">
-		<header>
-			<nav class="navigatie">
-				<img src="./resources/assets/logo claraoptic.svg" class="logo" alt="Logo-ul clinicii ClaraOptic" width="134px" height="48px">
-				<img src="./resources/assets/menu.svg" class="menu" alt="Deschide meniul navigatie" width="48px" height="33.6px">
+		<header class="header">
+			<a class="Logo" href="#" title="Revino pe prima pagină a site-ului ClaraOPTIC.ro">
+				<picture class="LogoPicture">
+					<source type="image/svg+xml" srcset="./resources/assets/logo claraoptic.svg" media="(min-width: 850px)" />
+					<source type="image/svg+xml" srcset="./resources/assets/logo claraoptic.svg" media="(min-width: 100px)" />
+					<img src="./resources/assets/logo claraoptic.png" alt="ClaraOPTIC.ro - @TODO - Logo" width="134" height="48" />
+				</picture>
+			</a>
+			<label class="hamburger-icon" id="menuToggle">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+			</label>
+			
+			<nav class="MainMenu">
+				<ul class="MainMenuList">
+					<li class="MainMenuItem">
+						<a href="#" class="MainMenuLink">Home</a>
+					</li>
+					<li class="MainMenuItem">
+						<a href="#" class="MainMenuLink">Servicii</a>
+					</li>
+					<li class="MainMenuItem">
+						<a href="#" class="MainMenuLink">Contact</a>
+					</li>
+				</ul>
+				<div class="contact-div">
+					<a href="tel:0345104233" class="tel">
+						<img src="./resources/assets/customer-service.svg" alt="Suna la ClaraOptic" class="service-icon" width="119" height="119">
+						<span class="telnumber">
+							0345 104 233
+						</span>
+					</a>
+					<h3 class="program">
+						Luni - Vineri : 08.00 - 15:00
+					</h3>
+					<a href="https://www.facebook.com/clara.optic" class="fb-link">	
+						<img src="./resources/assets/icon-facebook.svg" alt="Pagina de Facebook a clinicii ClaraOptic" class="fb-icon" width="26" height="26">
+						<span class="txt-fb">Clara OPTIC</span>
+					</a>
+				</div>
 			</nav>
 		</header>
 

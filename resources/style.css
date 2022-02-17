@@ -19,9 +19,9 @@
 :root {
   --gap: 2px;
   --content-gap: 20px;
-  --nav-width: 1024px;
+  --nav-width: 1920px;
   --main-width: 800px;
-  --header-height: 60px;
+  --header-height: 184px;
   --footer-height: 60px;
   --radius: 8px;
   --primary: #5DC3B2;
@@ -44,7 +44,7 @@ body {
   min-height: 100vh;
   margin: 0;
   text-rendering: optimizeSpeed;
-  background: #1d1e20;
+  background: url(./assets/topography.png);
 }
 
 img, picture {
@@ -54,10 +54,6 @@ img, picture {
 
 input, button, textarea, select {
   font: inherit;
-}
-
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section, table {
-  display: block;
 }
 
 strong {
@@ -97,20 +93,49 @@ h1, h2, h3, h4, li {
   border-width: 0;
 }
 
-/**********************************/
-.navigatie {
-  background-color: var(--secundary);
+.header {
+  position: absolute;
+  width: 1920px;
+  height: 75px;
+  background: conic-gradient(from 270deg at 100% 100%, #132C33 0deg, rgba(19, 44, 51, 0) 360deg);
 }
 
-.navigatie .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+.Logo {
+  display: block;
+  margin: 0;
+  padding: 9px 16px;
 }
 
-.navigatie .menu {
-  margin-left: auto;
-  display: -webkit-inline-flex;
+.ToggleMenu {
+  background: none;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hamburger-icon {
+  margin: 0;
+  padding: 19px 16px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+.hamburger-icon span {
+  width: 40px;
+  background-color: var(--primary);
+  height: 5px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.hamburger-icon span:last-child {
+  margin-bottom: 0px;
+}
+
+.MainMenu {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
