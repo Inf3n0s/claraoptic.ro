@@ -1,3 +1,5 @@
-function openNav(){
-    document.getElementById("menuToggle")
-}
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});

@@ -46,13 +46,13 @@
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="theme-color" content="#132C33" />
 
-		<!-- optimize -->
+		<!--optimize--> 
 		<script type="module">
 			document.documentElement.classList.remove('no-js');
 			document.documentElement.classList.add('js');
 		</script>
 		<link rel="preload" href="@TODO" as="font" type="font/woff2" crossorigin />
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
@@ -64,16 +64,13 @@
 				<picture class="LogoPicture">
 					<source type="image/svg+xml" srcset="./resources/assets/logo claraoptic.svg" media="(min-width: 850px)" />
 					<source type="image/svg+xml" srcset="./resources/assets/logo claraoptic.svg" media="(min-width: 100px)" />
-					<img src="./resources/assets/logo claraoptic.png" alt="ClaraOPTIC.ro - @TODO - Logo" width="134" height="48" />
+					<img src="./resources/assets/logo claraoptic.png" alt="ClaraOPTIC.ro - @TODO - Logo" width="131" height="48" />
 				</picture>
 			</a>
-			<label class="hamburger-icon" id="menuToggle">
-					<span>&nbsp;</span>
-					<span>&nbsp;</span>
-					<span>&nbsp;</span>
-			</label>
-			
 			<nav class="MainMenu">
+				<div class="adresa">
+					<h2>Adresa clinicii : Strada Republicii NR 44, Pucioasa 135400 , RO</h2>
+				</div>
 				<ul class="MainMenuList">
 					<li class="MainMenuItem">
 						<a href="#" class="MainMenuLink">Home</a>
@@ -85,6 +82,7 @@
 						<a href="#" class="MainMenuLink">Contact</a>
 					</li>
 				</ul>
+				
 				<div class="contact-div">
 					<a href="tel:0345104233" class="tel">
 						<img src="./resources/assets/customer-service.svg" alt="Suna la ClaraOptic" class="service-icon" width="119" height="119">
@@ -95,15 +93,22 @@
 					<h3 class="program">
 						Luni - Vineri : 08.00 - 15:00
 					</h3>
-					<a href="https://www.facebook.com/clara.optic" class="fb-link">	
-						<img src="./resources/assets/icon-facebook.svg" alt="Pagina de Facebook a clinicii ClaraOptic" class="fb-icon" width="26" height="26">
-						<span class="txt-fb">Clara OPTIC</span>
-					</a>
+					<div class="fb">
+						<a href="https://www.facebook.com/clara.optic" class="fb-link">	
+							<img src="./resources/assets/icon-facebook.svg" alt="Pagina de Facebook a clinicii ClaraOptic" class="fb-icon" width="26" height="26">
+							<span class="txt-fb">Clara OPTIC</span>
+						</a>
+					</div>
 				</div>
 			</nav>
+			<div id="nav-icon3">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</header>
-
-		<script defer src="resources/script.js"></script>
+		<script src="./resources/scripts.js"></script>
 	</body>
 
 </html>

@@ -66,10 +66,13 @@ h1,h2,h3,h4,li{
 
 
 .header{
-	position: absolute;
-	width: 1920px;
-	height: 75px;
-	background: conic-gradient(from 270deg at 100% 100%, #132C33 0deg, rgba(19, 44, 51, 0) 360deg);
+	display:flex;
+  	align-items:center;
+	background: #132C33;
+	//background: conic-gradient(from 270deg at 100% 100%, #132C33 0deg, rgba(19, 44, 51, 0) 360deg);
+	@media (max-width:768px){
+		justify-content:space-between;
+	}
 }
 	.Logo{
 		display: block;
@@ -83,38 +86,104 @@ h1,h2,h3,h4,li{
 		border: none;
 		box-shadow: none;
 	}
-	.hamburger-icon {
-		margin: 0;
-		padding: 19px 16px;
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 240px;
-	}
-	.hamburger-icon span {
-		width: 40px;
-		background-color: var(--primary);
-		height: 5px;
-		display: block;
-		margin-bottom: 6px;
-	}
-	.hamburger-icon span:last-child {
-		margin-bottom:0px;
-	}
-	.MainMenu{
-		display: none;
-	}
-		.MainMenuList{
-
+	#nav-icon3 {
+		
+		margin-right: 15px;
+		width: 50px;
+		height: 38px;
+		position: relative;
+		transform: rotate(0deg);
+		transition: .5s ease-in-out;
+		cursor: pointer;
+		@media (min-width: 1024px){
+			display: none;
 		}
-			.MainMenuItem{
 
-			}
-				.MainMenuLink{
-
-				}
+	  }
+	  
+	#nav-icon3 span {
+		display: block;
+		position: absolute;
+		height: 7px;
+		width: 100%;
+		background: var(--primary);
+		border-radius: 9px;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+	  }
+	
+	#nav-icon3 span:nth-child(1) {
+		top: 0px;
+	  }
+	  
+	  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+		top: 15px;
+	  }
+	  
+	  #nav-icon3 span:nth-child(4) {
+		top: 30px;
+	  }
+	  
+	  #nav-icon3.open span:nth-child(1) {
+		top: 15px;
+		width: 0%;
+		left: 50%;
+	  }
+	  
+	  #nav-icon3.open span:nth-child(2) {
+		transform: rotate(45deg);
+	  }
+	  
+	  #nav-icon3.open span:nth-child(3) {
+		transform: rotate(-45deg);
+	  }
+	  
+	  #nav-icon3.open span:nth-child(4) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	  }
+	  
+	.MainMenu{
+		display:flex;
+		justify-content:space-between;
+		
+		@media (max-width: 768px){
+			display: none;
+		}
+	}
+	.MainMenuList{
+		position: relative;
+		list-style:none;
+	}
+	.MainMenuItem{
+		display: inline-block;
+		padding: 3.5em;
+	}
+	.MainMenuLink{
+		font-weight: 800;
+		padding: 1em;
+		font-size: 32px;
+		color: #D8E3E7;
+	}
+	.adresa{
+		position: absolute;
+		width: 50%;
+		height: 45px;
+		background: url(./assets/topography.png);
+		border-radius: 0px 0px 95px 95px;
+	}
+	.adresa h2{
+		text-align: center;
+		z-index: 99;
+		font-weight: normal;
+		font-size: 0.95em;
+		color: #000;
+	}
 	.contact-div{
-
+		display: none;
 	}
 		.tel{
 
@@ -128,12 +197,19 @@ h1,h2,h3,h4,li{
 			.program{
 
 			}
+		.fb{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+		}
 		.fb-icon{
-
+			display:inline-block;
 		}
 		.txt-fb{
-
+			display:inline-block;
+			padding: 0.4em;
 		}
+		
 		
 	
 
