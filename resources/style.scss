@@ -209,7 +209,33 @@ h1,h2,h3,h4,li{
 			display:inline-block;
 			padding: 0.4em;
 		}
-		
+.body{
+}	
+	.bg-quote{
+		background-color: rgba(93, 195, 178, .5);
+		border-radius: 5%;
+		border: 1px solid #D8E3E7;
+		box-sizing: border-box;
+		margin-top: 1.5em;
+	}
+	.quote{
+		color: #000;
+		opacity: 1;
+		padding: 10px;
+		font-size: 18px;
+		z-index: 99;
+	}
+	.ct-box{
+		background: #AED8DA;
+		border-radius: 11px;
+	}
+	.ct-box h2{
+		color: #000;
+	}	
+	.contact-div-mobile span{
+		color: #000;
+		font-weight: 700;
+	}	
 		
 	
 
