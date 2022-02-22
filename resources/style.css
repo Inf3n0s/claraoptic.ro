@@ -244,6 +244,10 @@ h1, h2, h3, h4, li {
   display: none;
 }
 
+.telnumber {
+  color: #000;
+}
+
 .fb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +265,7 @@ h1, h2, h3, h4, li {
 }
 
 .txt-fb {
+  color: #000;
   display: inline-block;
   padding: 0.4em;
 }
@@ -282,17 +287,95 @@ h1, h2, h3, h4, li {
   z-index: 99;
 }
 
-.ct-box {
+.h-box-ct {
+  margin-left: 22px;
+  width: 97px;
+  height: 31px;
   background: #AED8DA;
   border-radius: 11px;
 }
 
-.ct-box h2 {
+.h-box-ct h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  text-align: center;
   color: #000;
 }
 
 .contact-div-mobile span {
   color: #000;
   font-weight: 700;
+}
+
+.mobile-service-icon {
+  display: initial;
+}
+
+.contact-table {
+  padding: 10px 0 0 20px;
+}
+
+.h-box-location {
+  margin-left: auto;
+  margin-right: 64px;
+  width: 97px;
+  height: 31px;
+  background: #AED8DA;
+  border-radius: 11px;
+}
+
+.h-box-location h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  text-align: center;
+  color: #000;
+}
+
+.location-table h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.8em;
+  text-align: right;
+  color: #000;
+  margin-left: auto;
+}
+
+.loc-icon {
+  float: right;
+}
+
+.location-icon {
+  -webkit-filter: invert(73%) sepia(68%) saturate(256%) hue-rotate(120deg) brightness(81%) contrast(99%);
+          filter: invert(73%) sepia(68%) saturate(256%) hue-rotate(120deg) brightness(81%) contrast(99%);
+}
+
+.programeaza-te {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 33px;
+  width: 254px;
+  height: 34px;
+  background: #E7515B;
+  border-radius: 90px;
+}
+
+.programeaza-te h3 {
+  text-align: center;
+  color: #D8E3E7;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.programare-icon {
+  margin-left: 22px;
+  margin-top: 5px;
+  -webkit-filter: invert(90%) sepia(18%) saturate(95%) hue-rotate(150deg) brightness(100%) contrast(87%);
+          filter: invert(90%) sepia(18%) saturate(95%) hue-rotate(150deg) brightness(100%) contrast(87%);
 }
 /*# sourceMappingURL=style.css.map */
