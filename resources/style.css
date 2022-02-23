@@ -359,23 +359,40 @@ h1, h2, h3, h4, li {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 33px;
-  width: 254px;
-  height: 34px;
+  margin-right: 33px;
+  width: auto;
+  height: 74px;
   background: #E7515B;
   border-radius: 90px;
 }
 
 .programeaza-te h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
   text-align: center;
   color: #D8E3E7;
+  margin-top: 45px;
   font-size: 16px;
-  padding-left: 10px;
 }
 
 .programare-icon {
-  margin-left: 22px;
-  margin-top: 5px;
+  width: 43px;
   -webkit-filter: invert(90%) sepia(18%) saturate(95%) hue-rotate(150deg) brightness(100%) contrast(87%);
           filter: invert(90%) sepia(18%) saturate(95%) hue-rotate(150deg) brightness(100%) contrast(87%);
+}
+
+.title {
+  margin-top: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: #225566;
+}
+
+.HeroAsistenta {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
