@@ -384,6 +384,8 @@ h1, h2, h3, h4, li {
 }
 
 .title {
+  font-size: 2em;
+  position: absolute;
   margin-top: 20px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -393,6 +395,40 @@ h1, h2, h3, h4, li {
 }
 
 .HeroAsistenta {
-  float: right;
+  position: relative;
+  margin-left: 150px;
+}
+
+.down-arrow {
+  position: absolute;
+  top: -90px;
+  margin-left: 67px;
+}
+
+.doctor_tabla {
+  margin: 20px 35px 0 35px;
+}
+
+.main {
+  position: absolute;
+  background: conic-gradient(from 270deg at 85.79% 100%, #BAE2DC 0deg, rgba(186, 226, 220, 0) 360deg);
+  border-radius: 34px;
+}
+
+.container-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background: #CCF3ED;
+  border-radius: 20px;
+}
+
+.main p {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

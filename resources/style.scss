@@ -298,19 +298,42 @@ h1,h2,h3,h4,li{
 		font-size: 16px;
 	}
 	.programare-icon{
-		//display: none;
-		//margin-left: 22px;
-		//margin-top: 5px;
-		//float: left;
 		width:43px;
 		filter: invert(90%) sepia(18%) saturate(95%) hue-rotate(150deg) brightness(100%) contrast(87%);
 	}
 	.title{
+		font-size: 2em;
+		position: absolute;
 		margin-top: 20px;
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 		color:#225566;
 	}
 	.HeroAsistenta{
-		float: right;
+		position: relative;
+		margin-left: 150px;
+	}
+	.down-arrow{
+		position: absolute;
+		top:-90px;
+		margin-left: 67px;
+	}
+	.doctor_tabla{
+		margin: 20px 35px 0 35px;
+	}
+	.main{
+		position: absolute;
+		background: conic-gradient(from 270deg at 85.79% 100%, #BAE2DC 0deg, rgba(186, 226, 220, 0) 360deg);
+		border-radius: 34px;
+	}
+	.container-img{
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+		background: #CCF3ED;
+		border-radius: 20px;
+	}
+	.main p{
+		padding-left: 20px;
 	}
