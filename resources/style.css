@@ -37,6 +37,8 @@ html {
   font-family: 'Montserrat', Trebuchet, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -45,6 +47,7 @@ body {
   margin: 0;
   text-rendering: optimizeSpeed;
   background: url(./assets/topography.png);
+  overflow-x: hidden;
 }
 
 img, picture {
@@ -396,7 +399,8 @@ h1, h2, h3, h4, li {
 
 .HeroAsistenta {
   position: relative;
-  margin-left: 150px;
+  margin-top: 20px;
+  margin-left: 90px;
 }
 
 .down-arrow {
